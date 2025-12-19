@@ -7,11 +7,11 @@ from drf_yasg import openapi
 
 schema_view = get_schema_view(
     openapi.Info(
-        title="Music Catalog API",
+        title="808's and API's",
         default_version='v1',
         description="Documentação da API de Catálogo de Músicas e Reviews",
         terms_of_service="https://www.google.com/policies/terms/",
-        contact=openapi.Contact(email="seu@email.com"),
+        contact=openapi.Contact(email="lucascript0101@gmail.com"),
         license=openapi.License(name="BSD License"),
     ),
     public=True,
