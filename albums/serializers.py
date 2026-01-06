@@ -7,6 +7,7 @@ class AlbumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Album
         fields = '__all__'
+        depth = 1
 
     def validate_launch_date(self, value):
         if value.year < 1950:
