@@ -7,7 +7,19 @@ class AlbumSerializer(serializers.ModelSerializer):
     class Meta:
         model = Album
         fields = '__all__'
-        depth = 1
+
+    def to_representation(self, instance):
+        representation = super().to_representation(instance)
+
+        representation['artists'] = [
+            {'id': artist.id, 'name': artist.name} for artist in instance.artists.all()
+        ]
+
+        representation['genres'] = [
+            {'id': genre.id, 'name': genre.name} for genre in instance.genres.all()
+        ]
+
+        return representation
 
     def validate_launch_date(self, value):
         if value.year < 1950:
