@@ -37,7 +37,7 @@ class TrackCreditsView(APIView):
 
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
-    def get(self, response, pk):
+    def get(self, request, pk):
 
         try:
             track = Track.objects.get(pk=pk)
