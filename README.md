@@ -113,5 +113,5 @@ def perform_create(self, serializer):
 
 Desenvolvido por **Lucas**.
 
-* [LinkedIn](https://www.linkedin.com/in/seu-linkedin)
-* [GitHub](https://github.com/seu-usuario)
+* [LinkedIn](https://www.linkedin.com/in/joao-lucas-ataide/)
+* [GitHub](https://github.com/lucasatmelo)
